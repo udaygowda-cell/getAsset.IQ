@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AssetIQ | Every hospital asset, right in your pocket.</title>
+<meta name="description" content="Biomedical equipment management for hospitals: register, breakdown tickets with measured downtime, preventive maintenance, calibration, contracts, and NABH-format reports. Works offline.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Header Navigation -->
+<header id="hd">
+  <div class="w nav">
+    <a href="#" class="brand-link" aria-label="AssetIQ by OneCliq home">
+      <div class="brand-logo-wrap">
+        <!-- Exact AssetIQ Viewfinder + Heartbeat ECG Logo from Business Card -->
+        <svg class="brand-logo-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Viewfinder Frame Corner Brackets -->
+          <path d="M4 14V8C4 5.79086 5.79086 4 8 4H14" stroke="#0A0F24" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M30 4H36C38.2091 4 40 5.79086 40 8V14" stroke="#0A0F24" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M40 30V36C40 38.2091 38.2091 40 36 40H30" stroke="#0A0F24" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M14 40H8C5.79086 40 4 38.2091 4 36V30" stroke="#0A0F24" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Central Pulse Circle -->
+          <circle cx="22" cy="22" r="11.5" fill="#00D2B8"/>
+          <!-- ECG Pulse Waveform -->
+          <path d="M14.5 22.2H17.2L19.2 17.5L22 26.5L24.8 19.5L26.5 22.2H29.5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="brand-text-col">
+          <div class="brand-title">Asset<span class="gt-iq">IQ</span></div>
+          <div class="brand-sub">by <span>onecliq.ai</span></div>
+        </div>
+      </div>
+    </a>
+    <nav class="links">
+      <a href="#value">Value</a>
+      <a href="#modules">Modules</a>
+      <a href="#issues">Issues</a>
+      <a href="#compliance">Compliance</a>
+      <a href="#compare">Compare</a>
+      <a href="#estimate">Estimate</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn pri" href="#contact">Request a demo</a>
+  </div>
+</header>
+
+<main>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="w">
+      
+      <!-- Primary Headline -->
+      <h1>Every hospital asset,<br><span class="gt">right in your pocket.</span></h1>
+      
+      <!-- Subtitle -->
+      <p class="hero-sub">
+        One single asset register for maintenance, contracts, compliance and cost on <strong>Web and Android</strong>. Breakdowns reach the right engineer in seconds, AMC coverage is checked before a vendor quote is approved, and NABH, JCI and AERB records are ready for every audit.
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="hero-cta">
+        <a class="btn btn-hero-primary" href="#contact">
+          <span>Start 30-Day Free Trial</span>
+          <span>→</span>
+        </a>
+        <button class="btn btn-hero-secondary" id="btnOpenVideo" type="button">
+          <span class="play-icon">
+            <svg viewBox="0 0 24 24"><polygon points="6,4 20,12 6,20"></polygon></svg>
+          </span>
+          <span>Watch 60s Demo Video</span>
+        </button>
+      </div>
+
+      <!-- Trust Badges Bar -->
+      <div class="hero-trust-bar">
+        <div class="trust-item">
+          <svg viewBox="0 0 20 20" fill="#2563EB">
+            <path d="M3 4a2 2 0 012-2h10a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2V4zm0 6a2 2 0 012-2h10a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2zm0 6a2 2 0 012-2h10a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2z"/>
+          </svg>
+          <span>Cloud-hosted, no servers to install</span>
+        </div>
+        <span class="trust-dot"></span>
+        <div class="trust-item">
+          <svg viewBox="0 0 20 20" fill="#7C3AED">
+            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v1h8v-1zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 16v-1a4 4 0 00-3-3.87 4 4 0 012 3.87v1h1zM4 16v-1a4 4 0 012-3.87A4 4 0 003 15v1h1z"/>
+          </svg>
+          <span>Unlimited users, roles and branches</span>
+        </div>
+        <span class="trust-dot"></span>
+        <div class="trust-item">
+          <span style="font-weight:700; color:#0F172A">23/24</span>
+          <span>capabilities fully available</span>
+        </div>
+      </div>
+
+  <!-- Hero scene: biomedical engineer scanning an asset tag -->
+  <div id="hero-scene-root"><div class="hs-stage" role="img" aria-label="Illustration of a biomedical engineer scanning the QR tag on a patient monitor with a tablet, while alerts for breakdowns, AMC coverage and audit records appear.">
+    <div class="hs-inner">
+      <svg class="hs-svg" viewBox="0 0 900 340" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="hsBg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EEF4FF"/></linearGradient>
+          <linearGradient id="hsBeamG" gradientUnits="userSpaceOnUse" x1="455" y1="113" x2="546" y2="230"><stop offset="0" stop-color="#00A3FF" stop-opacity=".75"/><stop offset="1" stop-color="#00D2B8" stop-opacity=".18"/></linearGradient>
+          <linearGradient id="hsFloor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E3EAF6"/><stop offset="1" stop-color="#EDF2FA"/></linearGradient>
+        
+          <radialGradient id="hsSkin" cx=".38" cy=".32" r=".8"><stop offset="0" stop-color="#FFDDC2"/><stop offset=".6" stop-color="#F6B993"/><stop offset="1" stop-color="#DE9670"/></radialGradient>
+          <linearGradient id="hsCoat" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#C6CDD8"/><stop offset=".35" stop-color="#F5F7FA"/><stop offset=".75" stop-color="#E4E8EF"/><stop offset="1" stop-color="#BFC7D3"/></linearGradient>
+          <linearGradient id="hsPants" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#141C2B"/><stop offset=".5" stop-color="#2C3A54"/><stop offset="1" stop-color="#18202F"/></linearGradient>
+          <linearGradient id="hsHair" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#94673F"/><stop offset=".5" stop-color="#5E3D24"/><stop offset="1" stop-color="#32200F"/></linearGradient>
+          <linearGradient id="hsBezel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2B3548"/><stop offset=".5" stop-color="#121A29"/><stop offset="1" stop-color="#0A0F1A"/></linearGradient>
+          <linearGradient id="hsTabFrame" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2E384C"/><stop offset="1" stop-color="#090D16"/></linearGradient>
+          <linearGradient id="hsPump" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#E6ECF5"/><stop offset=".5" stop-color="#FFFFFF"/><stop offset="1" stop-color="#D8E0EC"/></linearGradient>
+          <radialGradient id="hsMonGlow"><stop offset="0" stop-color="#22D3A5" stop-opacity=".30"/><stop offset="1" stop-color="#22D3A5" stop-opacity="0"/></radialGradient>
+          <radialGradient id="hsTabGlow"><stop offset="0" stop-color="#7DD3FC" stop-opacity=".55"/><stop offset="1" stop-color="#7DD3FC" stop-opacity="0"/></radialGradient>
+          
+          <filter id="hsGrain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" seed="4" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 .35  0 0 0 0 .2  0 0 0 0 .1  0 0 0 1.7 -.6" result="g"/><feComposite in="g" in2="SourceAlpha" operator="in"/></filter>
+          <filter id="hsDof" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur stdDeviation=".9"/></filter>
+          <radialGradient id="hsIrisG"><stop offset="0" stop-color="#A5733F"/><stop offset=".55" stop-color="#6A4424"/><stop offset="1" stop-color="#2B1A0E"/></radialGradient>
+          <pattern id="hsWeave" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path d="M0 0 V3" stroke="#9FB0C8" stroke-opacity=".35" stroke-width=".6"/></pattern>
+          <linearGradient id="hsRefG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#000"/></linearGradient>
+          <mask id="hsRefM" maskUnits="userSpaceOnUse" x="0" y="304" width="900" height="36"><rect x="0" y="304" width="900" height="36" fill="url(#hsRefG)"/></mask>
+          <radialGradient id="hsIris2"><stop offset="0" stop-color="#9ED3C2"/><stop offset=".6" stop-color="#4E9AA0"/><stop offset="1" stop-color="#2F6B78"/></radialGradient>
+          <filter id="hsSoft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="1.3"/></filter>
+          <filter id="hsSoft2" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="2.4"/></filter>
+          <radialGradient id="hsMetal" cx=".35" cy=".3"><stop offset="0" stop-color="#F8FAFC"/><stop offset="1" stop-color="#64748B"/></radialGradient>
+          <filter id="hsBlur" x="-30%" y="-100%" width="160%" height="300%"><feGaussianBlur stdDeviation="4.5"/></filter>
+        </defs>
+
+        <!-- room -->
+        <rect x="0.5" y="0.5" width="899" height="339" rx="28" fill="url(#hsBg)" stroke="#E2E8F0"/>
+        <path d="M0 296 H900 V312 a28 28 0 0 1 -28 28 H28 a28 28 0 0 1 -28 -28 Z" fill="url(#hsFloor)"/>
+        <line x1="0" y1="296" x2="900" y2="296" stroke="#D5DEEA"/>
+        <path d="M0 150 H900" stroke="#E2E8F0" stroke-dasharray="2 8" stroke-linecap="round"/>
+
+        <!-- hospital bed -->
+        <g >
+          <rect x="34" y="168" width="10" height="88" rx="5" fill="#94A3B8"/>
+          <rect x="226" y="198" width="8" height="58" rx="4" fill="#94A3B8"/>
+          <rect x="50" y="256" width="6" height="40" fill="#94A3B8"/><rect x="212" y="256" width="6" height="40" fill="#94A3B8"/>
+          <circle cx="53" cy="300" r="5" fill="#64748B"/><circle cx="215" cy="300" r="5" fill="#64748B"/>
+          <rect x="40" y="244" width="190" height="12" rx="6" fill="#CBD5E1"/>
+          <rect x="46" y="212" width="182" height="34" rx="11" fill="#FFFFFF" stroke="#D5DEEA" stroke-width="2"/>
+          <rect x="52" y="198" width="50" height="19" rx="9.5" fill="#EFF6FF" stroke="#C7D8F0" stroke-width="2"/>
+          <rect x="112" y="206" width="116" height="40" rx="11" fill="#C7D2FE" fill-opacity=".55" stroke="#A5B4FC" stroke-width="2"/>
+          <path d="M126 206 V246 M150 206 V246" stroke="#A5B4FC" stroke-width="1.5" opacity=".6"/>
+        </g>
+
+        <!-- IV pole + infusion pump -->
+        <g >
+          <ellipse cx="771" cy="308" rx="40" ry="5" fill="#0F172A" opacity=".08"/>
+          <rect x="768" y="60" width="6" height="238" rx="3" fill="#94A3B8"/>
+          <path d="M771 84 V60 Q771 52 764 52 H757 V76" stroke="#94A3B8" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <rect x="746" y="298" width="50" height="6" rx="3" fill="#94A3B8"/>
+          <circle cx="752" cy="309" r="5" fill="#64748B"/><circle cx="790" cy="309" r="5" fill="#64748B"/>
+          <!-- bag -->
+          <g transform="translate(742,76)">
+            <rect x="0" y="0" width="30" height="46" rx="11" fill="#E0F2FE" stroke="#2563EB" stroke-width="2"/>
+            <path d="M2 22 H28 V35 a11 11 0 0 1 -11 11 H13 a11 11 0 0 1 -11 -11 Z" fill="#00A3FF" fill-opacity=".4"/>
+            <rect x="9" y="8" width="12" height="3" rx="1.5" fill="#2563EB" opacity=".5"/>
+          </g>
+          <!-- tube + drip chamber -->
+          <path d="M757 122 V128" stroke="#2563EB" stroke-width="2"/>
+          <rect x="751" y="128" width="12" height="24" rx="5" fill="#FFFFFF" fill-opacity=".85" stroke="#2563EB" stroke-width="2"/>
+          <circle class="hs-drop" cx="757" cy="132" r="2.4" fill="#00A3FF"/>
+          <path d="M757 152 V178" stroke="#2563EB" stroke-width="2"/>
+          <!-- pump -->
+          <rect x="740" y="176" width="62" height="74" rx="11" fill="url(#hsPump)" stroke="#CBD5E1" stroke-width="2"/>
+          <rect x="748" y="184" width="46" height="26" rx="5" fill="#0F172A"/>
+          <text x="754" y="196" font-size="7" fill="#22D3A5" font-weight="700">RATE</text>
+          <text x="753" y="206" font-size="8.5" fill="#22D3A5" font-weight="800">25 mL/h</text>
+          <circle class="hs-led" cx="788" cy="226" r="3.2" fill="#059669"/>
+          <circle cx="754" cy="226" r="3.2" fill="#CBD5E1"/><circle cx="765" cy="226" r="3.2" fill="#CBD5E1"/>
+          <rect x="748" y="236" width="46" height="4" rx="2" fill="#E2E8F0"/>
+        </g>
+
+        <!-- patient monitor on cart -->
+        <g>
+          <ellipse cx="585" cy="309" rx="64" ry="6" fill="#0F172A" opacity=".22" filter="url(#hsBlur)"/>
+          <rect x="580" y="244" width="10" height="54" fill="#94A3B8"/>
+          <rect x="535" y="296" width="100" height="8" rx="4" fill="#CBD5E1"/>
+          <circle cx="551" cy="309" r="6" fill="#475569"/><circle cx="619" cy="309" r="6" fill="#475569"/>
+          <ellipse cx="585" cy="177" rx="105" ry="78" fill="url(#hsMonGlow)"/>
+          <rect x="520" y="130" width="130" height="116" rx="13" fill="url(#hsBezel)"/><rect x="521" y="131" width="128" height="114" rx="12" fill="none" stroke="#fff" stroke-opacity=".12"/>
+          <rect x="530" y="140" width="110" height="74" rx="6" fill="#06121F"/><polygon points="530,140 578,140 548,214 530,214" fill="#fff" opacity=".07"/>
+          <text x="536" y="153" font-size="7.5" fill="#22D3A5" font-weight="700" opacity=".85">HR</text>
+          <text x="536" y="171" font-size="17" fill="#22D3A5" font-weight="800">72</text>
+          <text x="600" y="153" font-size="7.5" fill="#38BDF8" font-weight="700" opacity=".9">SpO₂</text>
+          <text x="600" y="171" font-size="17" fill="#38BDF8" font-weight="800">98</text>
+          <path d="M534 200 H546 l3 -5 l3 5 H560 l3 6 l5 -26 l5 26 l4 -6 H584 l5 -6 l6 6 H608 l3 6 l5 -26 l5 26 l4 -6 H636" stroke="#22D3A5" stroke-opacity=".22" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+          <path class="hs-ecg" pathLength="100" stroke-dasharray="34 66" d="M534 200 H546 l3 -5 l3 5 H560 l3 6 l5 -26 l5 26 l4 -6 H584 l5 -6 l6 6 H608 l3 6 l5 -26 l5 26 l4 -6 H636" stroke="#22D3A5" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+          <!-- asset tag (QR) -->
+          <rect x="534" y="218" width="24" height="24" rx="3.5" fill="#FFFFFF"/>
+          <g transform="translate(537.6,221.6)" fill="#0A0F24"><rect x="0.0" y="0.0" width="2.4" height="2.4"/><rect x="2.4" y="0.0" width="2.4" height="2.4"/><rect x="4.8" y="0.0" width="2.4" height="2.4"/><rect x="9.6" y="0.0" width="2.4" height="2.4"/><rect x="12.0" y="0.0" width="2.4" height="2.4"/><rect x="14.4" y="0.0" width="2.4" height="2.4"/><rect x="0.0" y="2.4" width="2.4" height="2.4"/><rect x="4.8" y="2.4" width="2.4" height="2.4"/><rect x="9.6" y="2.4" width="2.4" height="2.4"/><rect x="14.4" y="2.4" width="2.4" height="2.4"/><rect x="0.0" y="4.8" width="2.4" height="2.4"/><rect x="2.4" y="4.8" width="2.4" height="2.4"/><rect x="4.8" y="4.8" width="2.4" height="2.4"/><rect x="9.6" y="4.8" width="2.4" height="2.4"/><rect x="14.4" y="4.8" width="2.4" height="2.4"/><rect x="7.2" y="7.2" width="2.4" height="2.4"/><rect x="12.0" y="7.2" width="2.4" height="2.4"/><rect x="0.0" y="9.6" width="2.4" height="2.4"/><rect x="2.4" y="9.6" width="2.4" height="2.4"/><rect x="7.2" y="9.6" width="2.4" height="2.4"/><rect x="9.6" y="9.6" width="2.4" height="2.4"/><rect x="12.0" y="9.6" width="2.4" height="2.4"/><rect x="2.4" y="12.0" width="2.4" height="2.4"/><rect x="4.8" y="12.0" width="2.4" height="2.4"/><rect x="7.2" y="12.0" width="2.4" height="2.4"/><rect x="14.4" y="12.0" width="2.4" height="2.4"/><rect x="0.0" y="14.4" width="2.4" height="2.4"/><rect x="4.8" y="14.4" width="2.4" height="2.4"/><rect x="9.6" y="14.4" width="2.4" height="2.4"/><rect x="12.0" y="14.4" width="2.4" height="2.4"/><rect x="14.4" y="14.4" width="2.4" height="2.4"/></g>
+          <circle class="hs-led" cx="618" cy="230" r="3" fill="#22D3A5"/>
+          <path d="M598 226 H610 M598 231 H610 M598 236 H610" stroke="#334155" stroke-width="2" stroke-linecap="round"/>
+          <path d="M628 226 H640 M628 231 H640 M628 236 H640" stroke="#334155" stroke-width="2" stroke-linecap="round"/>
+        </g>
+
+        <!-- engineer -->
+        <g transform="translate(330,0)"><g class="hs-person o"><ellipse cx="10" cy="308" rx="56" ry="6" fill="#0F172A" opacity=".13"/><g transform="translate(-13,220)"><g class="hs-leg1 o"><rect x="-12" y="0" width="24" height="50" rx="11" fill="#26344B"/><g transform="translate(0,47)"><g class="hs-shin1 o"><rect x="-10" y="0" width="20" height="34" rx="8" fill="#26344B"/><path d="M-9 30 H7 C16 32 22 36 22 41 H-9 Z" fill="#1B2230"/></g></g></g></g><g transform="translate(14,220)"><g class="hs-leg2 o"><rect x="-12" y="0" width="24" height="50" rx="11" fill="#26344B"/><g transform="translate(0,47)"><g class="hs-shin2 o"><rect x="-10" y="0" width="20" height="34" rx="8" fill="#26344B"/><path d="M-9 30 H7 C16 32 22 36 22 41 H-9 Z" fill="#1B2230"/></g></g></g></g><g class="hs-body o"><g transform="translate(-34,124)"><g class="hs-arm2 o"><path d="M0 0 L-3 36" stroke="#CDD3DC" stroke-width="25" stroke-linecap="round"/><path d="M0 0 L-3 36" stroke="#EEF0F3" stroke-width="22" stroke-linecap="round"/><g transform="translate(-3,36)"><g class="hs-el2 o"><path d="M0 0 L-2 22" stroke="#CDD3DC" stroke-width="25" stroke-linecap="round"/><path d="M0 0 L-2 22" stroke="#EEF0F3" stroke-width="22" stroke-linecap="round"/><rect x="-10" y="19" width="16" height="5" rx="2.5" fill="#CDD3DC"/><rect x="-9.5" y="24" width="15" height="17" rx="6.5" fill="#F0B08B"/><g transform="translate(-4.5,40)"><g class="hs-thumb o" transform="scale(1,.15)"><rect x="-2.9" y="0" width="5.8" height="14" rx="2.9" fill="#F0B08B"/></g></g></g></g></g></g><path d="M-37 118 C-41 142 -40 202 -38 238 C-12 244 12 244 38 238 C40 202 41 142 37 118 C24 109 -24 109 -37 118 Z" fill="#EEF0F3" stroke="#CDD3DC" stroke-width="1.5"/><path d="M-14 110 L0 156 L14 110 Z" fill="#BFD6F0"/><path d="M-14 107 L-3 115 L0 124 L-15 119 Z M14 107 L3 115 L0 124 L15 119 Z" fill="#D6E5F7" stroke="#A9C4E6" stroke-width=".8" stroke-linejoin="round"/><path d="M-3.4 122 L3.4 122 L5 129 L3 160 L0 167 L-3 160 L-5 129 Z" fill="#2F55B5"/><path d="M-3.4 122 L3.4 122 L5 129 L-5 129 Z" fill="#244596"/><path d="M-13 110 L-3 164 L-24 132 Z M13 110 L3 164 L24 132 Z" fill="#F7F8FA" stroke="#CDD3DC" stroke-width="1.3" stroke-linejoin="round"/><path d="M0 168 V240" stroke="#CDD3DC" stroke-width="1.3"/><circle cx="6" cy="200" r="2.6" fill="#3A3F4A"/><circle cx="6" cy="222" r="2.6" fill="#3A3F4A"/><rect x="18" y="172" width="16" height="19" rx="3" fill="#F7F8FA" stroke="#CDD3DC" stroke-width="1.3"/><rect x="26" y="168" width="3" height="10" rx="1.5" fill="#2F55B5"/><rect x="-8" y="98" width="16" height="18" rx="5" fill="#DE9A74"/><g transform="translate(0,110)"><g class="hs-steth o"><g transform="translate(0,-110)"><path d="M-11 109 C-21 128 -24 150 -21 164 M11 109 C21 126 26 146 25 160 C24 172 20 184 17 190" stroke="#3E5C9A" stroke-width="2.8" fill="none" stroke-linecap="round"/><circle cx="-21" cy="170" r="6.5" fill="#C7CED8" stroke="#3E5C9A" stroke-width="1.6"/><circle cx="-21" cy="170" r="3" fill="#9AA6B8"/></g></g></g><g transform="translate(0,112)"><g class="hs-badge o"><g transform="translate(0,-112)"><rect x="-32" y="182" width="12" height="6" rx="1.5" fill="#fff" stroke="#9AA6B8" stroke-width="1"/></g></g></g><g transform="translate(0,104)"><g class="hs-head o"><ellipse cx="-24" cy="-27" rx="4.6" ry="6.4" fill="#DE9A74"/><ellipse cx="24" cy="-27" rx="4.6" ry="6.4" fill="#DE9A74"/><path d="M-23 -28 C-23 -8 -13 0 0 0 C13 0 23 -8 23 -28 C23 -47 12 -53 0 -53 C-12 -53 -23 -47 -23 -28 Z" fill="#F0B08B"/><path d="M-23 -33 C-25 -18 -23 -6 -12 3 C-6 8 6 8 12 3 C23 -6 25 -18 23 -33 C21 -24 17 -20 12 -19 C8 -23 -8 -23 -12 -19 C-17 -20 -21 -24 -23 -33 Z" fill="#5B3A2B"/><path d="M-12 -17 C-8 -23 -2 -21 0 -19 C2 -21 8 -23 12 -17 C8 -14 -8 -14 -12 -17 Z" fill="#5B3A2B"/><path d="M-8.5 -13.5 Q0 -11.6 8.5 -13.5 Q7.6 -5.6 0 -5.6 Q-7.6 -5.6 -8.5 -13.5 Z" fill="#7A2B2B"/><path d="M-7.6 -13 Q0 -11.2 7.6 -13 Q6.8 -9.6 0 -9.4 Q-6.8 -9.6 -7.6 -13 Z" fill="#fff"/><ellipse cx="0" cy="-24" rx="5" ry="4.4" fill="#DE9A74"/><ellipse cx="-1.2" cy="-25.4" rx="1.6" ry="1.1" fill="#fff" opacity=".4"/><path d="M-23 -33 C-27 -52 -14 -58 -2 -58 C4 -64 18 -65 25 -59 L25 -53 C27 -47 25 -40 23 -33 C22 -42 14 -46 2 -46 C-10 -46 -19 -42 -23 -33 Z" fill="#4A2C22"/><path d="M-16 -41 Q-9.5 -46.5 -3 -42.5 M3 -42.5 Q9.5 -46.5 16 -41" stroke="#4A2C22" stroke-width="3.4" fill="none" stroke-linecap="round"/><g transform="translate(-9.5,-31)"><g class="hs-eye o"><g class="hs-iris"><circle r="2.8" fill="#1A1210"/><circle cx=".9" cy="-.9" r=".85" fill="#fff"/></g></g></g><g transform="translate(9.5,-31)"><g class="hs-eye o"><g class="hs-iris"><circle r="2.8" fill="#1A1210"/><circle cx=".9" cy="-.9" r=".85" fill="#fff"/></g></g></g></g></g><g transform="translate(26,124)"><g class="hs-sh o"><path d="M0 0 L20 40" stroke="#CDD3DC" stroke-width="25" stroke-linecap="round"/><path d="M0 0 L20 40" stroke="#EEF0F3" stroke-width="22" stroke-linecap="round"/><g transform="translate(20,40)"><g class="hs-el o"><path d="M0 0 L30 -4" stroke="#CDD3DC" stroke-width="25" stroke-linecap="round"/><path d="M0 0 L30 -4" stroke="#EEF0F3" stroke-width="22" stroke-linecap="round"/><rect x="23" y="-14" width="6" height="19" rx="2.5" fill="#CDD3DC"/><ellipse cx="34" cy="-7" rx="7.4" ry="8" fill="#F0B08B"/><g transform="translate(34,-7)"><g class="hs-tabj o"><g transform="translate(4,-27) rotate(-8)">
+                  <circle cx="18" cy="-8" r="46" fill="url(#hsTabGlow)"/>
+                  <rect x="-6" y="-40" width="48" height="64" rx="8" fill="url(#hsTabFrame)"/><rect x="-5.4" y="-39.4" width="46.8" height="62.8" rx="7.6" fill="none" stroke="#fff" stroke-opacity=".18"/>
+                  <rect x="-2" y="-36" width="40" height="56" rx="4.5" fill="#EFF6FF"/>
+                  <path d="M4 -22 V-30 H12 M24 -30 H32 V-22 M32 -10 V-2 H24 M12 -2 H4 V-10" stroke="#2563EB" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                  <rect x="6" y="3" width="26" height="3" rx="1.5" fill="#CBD5E1"/><rect x="6" y="9" width="16" height="3" rx="1.5" fill="#E2E8F0"/>
+                  <line class="hs-scanline" x1="6" y1="-28" x2="30" y2="-28" stroke="#00A3FF" stroke-width="2" stroke-linecap="round"/>
+                  <g transform="translate(18,-16)"><g class="hs-check o"><circle r="10" fill="#059669"/><path d="M-5 0 l4 4 l7 -8" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g></g>
+                  <polygon points="-2,-36 22,-36 -2,2" fill="#fff" opacity=".35"/>
+                  <ellipse cx="44.5" cy="4" rx="2.6" ry="4.4" fill="url(#hsSkin)"/><ellipse cx="45" cy="13" rx="2.6" ry="4.2" fill="url(#hsSkin)"/><ellipse cx="44" cy="-4.5" rx="2.4" ry="4" fill="url(#hsSkin)"/>
+                  <ellipse cx="0" cy="14" rx="3" ry="7" transform="rotate(10 0 14)" fill="url(#hsSkin)"/>
+</g></g></g></g></g></g></g></g></g></g>
+
+        <!-- scan beam + viewfinder on the asset tag -->
+        <polygon class="hs-beam" points="455,113 458,124 561,240 533,218" fill="url(#hsBeamG)"/>
+        <rect class="hs-qrsweep" x="533" y="218" width="26" height="2.4" rx="1.2" fill="#00F0D0"/>
+      </svg>
+
+      <div class="hs-chip hs-a"><span class="hs-ic r"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></span><span><b>Breakdown reported</b><small>Engineer assigned in 8 sec</small></span></div>
+      <div class="hs-chip hs-v"><span class="hs-ic g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Asset scanned</b><small>Monitor history loaded</small></span></div>
+      <div class="hs-chip hs-b"><span class="hs-ic v"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span><span><b><span class="hs-lg">AMC coverage verified</span><span class="hs-sm">AMC verified</span></b><small>Checked before quote approval</small></span></div>
+      <div class="hs-chip hs-c"><span class="hs-ic c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg></span><span><b>NABH · JCI · AERB</b><small>Audit records ready</small></span></div>
+    </div>
+  </div></div>
+
+    </div>
+  </section>
+
+  <!-- Value Section -->
+  <section id="value" class="alt">
+    <div class="w">
+      <div class="hd rv">
+        <h2>What the money in your equipment is doing</h2>
+        <p>Equipment is usually the second-largest capital item after the hospital building. Pick a question an owner or CFO asks and see the answer AssetIQ gives, straight from the records your engineers work in every day.</p>
+      </div>
+      <div class="val">
+        <div class="ql rv" id="ql"></div>
+        <div class="vc rv" id="vc"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roles Section -->
+  <section id="roles">
+    <div class="w">
+      <div class="hd rv">
+        <h2>What each department gets from AssetIQ</h2>
+        <p>One record per device, for every department. Any staff member can report a fault by QR scan. Without it: missed calibrations and AMC paid twice.</p>
+      </div>
+      <div class="hs-strip rv"><svg viewBox="0 0 720 128" aria-hidden="true"><path d="M110 56 H610" stroke="#CBD5E1" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/><g transform="translate(110,0)"><g class="hs-bob o" style="animation-delay:0.0s"><circle cx="0" cy="48" r="34" fill="#fff" stroke="#E2E8F0" stroke-width="2"/><g transform="translate(0,34)" class=""><g class="o"><path d="M-22 40 C-22 18 22 18 22 40 Z" fill="#6366F1"/><circle cx="0" cy="2" r="13" fill="#C68E63"/><path d="M-13 0 C-15 -18 15 -18 13 0 C8 -9 -7 -9 -13 0 Z" fill="#1F2937"/></g></g><rect x="20" y="20" width="16" height="16" rx="3" fill="#0A0F24"/><rect x="23" y="23" width="4" height="4" fill="#fff"/><rect x="29" y="23" width="4" height="4" fill="#fff"/><rect x="23" y="29" width="4" height="4" fill="#fff"/><rect class="hs-qr" x="20" y="20" width="16" height="16" rx="3" fill="none" stroke="#00D2B8" stroke-width="2.4" style="animation-delay:0.0s"/></g></g><text x="110" y="112" text-anchor="middle" font-size="12" font-weight="600" fill="#475569">Biomedical</text><g transform="translate(277,0)"><g class="hs-bob o" style="animation-delay:0.9s"><circle cx="0" cy="48" r="34" fill="#fff" stroke="#E2E8F0" stroke-width="2"/><g transform="translate(0,34)" class=""><g class="o"><path d="M-22 40 C-22 18 22 18 22 40 Z" fill="#00D2B8"/><circle cx="0" cy="2" r="13" fill="#E0AC84"/><path d="M-13 0 C-15 -18 15 -18 13 0 C8 -9 -7 -9 -13 0 Z" fill="#3B2A20"/></g></g><rect x="20" y="20" width="16" height="16" rx="3" fill="#0A0F24"/><rect x="23" y="23" width="4" height="4" fill="#fff"/><rect x="29" y="23" width="4" height="4" fill="#fff"/><rect x="23" y="29" width="4" height="4" fill="#fff"/><rect class="hs-qr" x="20" y="20" width="16" height="16" rx="3" fill="none" stroke="#00D2B8" stroke-width="2.4" style="animation-delay:0.9s"/></g></g><text x="277" y="112" text-anchor="middle" font-size="12" font-weight="600" fill="#475569">Nursing</text><g transform="translate(443,0)"><g class="hs-bob o" style="animation-delay:1.8s"><circle cx="0" cy="48" r="34" fill="#fff" stroke="#E2E8F0" stroke-width="2"/><g transform="translate(0,34)" class=""><g class="o"><path d="M-22 40 C-22 18 22 18 22 40 Z" fill="#2563EB"/><circle cx="0" cy="2" r="13" fill="#B77C54"/><path d="M-13 0 C-15 -18 15 -18 13 0 C8 -9 -7 -9 -13 0 Z" fill="#1F2937"/></g></g><rect x="20" y="20" width="16" height="16" rx="3" fill="#0A0F24"/><rect x="23" y="23" width="4" height="4" fill="#fff"/><rect x="29" y="23" width="4" height="4" fill="#fff"/><rect x="23" y="29" width="4" height="4" fill="#fff"/><rect class="hs-qr" x="20" y="20" width="16" height="16" rx="3" fill="none" stroke="#00D2B8" stroke-width="2.4" style="animation-delay:1.8s"/></g></g><text x="443" y="112" text-anchor="middle" font-size="12" font-weight="600" fill="#475569">Finance</text><g transform="translate(610,0)"><g class="hs-bob o" style="animation-delay:2.7s"><circle cx="0" cy="48" r="34" fill="#fff" stroke="#E2E8F0" stroke-width="2"/><g transform="translate(0,34)" class=""><g class="o"><path d="M-22 40 C-22 18 22 18 22 40 Z" fill="#F59E0B"/><circle cx="0" cy="2" r="13" fill="#D9A27A"/><path d="M-13 0 C-15 -18 15 -18 13 0 C8 -9 -7 -9 -13 0 Z" fill="#111827"/></g></g><rect x="20" y="20" width="16" height="16" rx="3" fill="#0A0F24"/><rect x="23" y="23" width="4" height="4" fill="#fff"/><rect x="29" y="23" width="4" height="4" fill="#fff"/><rect x="23" y="29" width="4" height="4" fill="#fff"/><rect class="hs-qr" x="20" y="20" width="16" height="16" rx="3" fill="none" stroke="#00D2B8" stroke-width="2.4" style="animation-delay:2.7s"/></g></g><text x="610" y="112" text-anchor="middle" font-size="12" font-weight="600" fill="#475569">Admin</text></svg></div>
+      <div class="tabs rv" id="tabs"></div>
+      <div class="panel rv" id="panel"></div>
+    </div>
+  </section>
+
+  <!-- Modules Section -->
+  <section id="modules" class="alt">
+    <div class="w">
+      <div class="hd rv">
+        <h2>Six modules. Switch on only what your hospital needs.</h2>
+        <p>AssetIQ has six modules for biomedical equipment management, from a single clinic to a multi-branch hospital group. Unlimited users, onboarding and user training are included as standard.</p>
+      </div>
+      <div class="mg" id="mg"></div>
+    </div>
+  </section>
+
+  <!-- Issues Section -->
+  <section id="issues">
+    <div class="w">
+      <div class="hd rv">
+        <h2>When something breaks, the ward has the last word</h2>
+        <p>Downtime is measured by the system, not typed in afterwards. The repair only closes when the nurse or technician who reported it confirms resolution.</p>
+      </div>
+      <div class="pw pw-flow rv"><div class="pw-rail"><i class="pw-fill"></i><i class="pw-dot"></i></div><div class="pw-step" style="--c:#00B8A0;--c2:#34D399"><div class="pw-ico"><svg viewBox="0 0 24 24"><path d="M4 8V6a2 2 0 0 1 2-2h2M16 4h2a2 2 0 0 1 2 2v2M20 16v2a2 2 0 0 1-2 2h-2M8 20H6a2 2 0 0 1-2-2v-2"/><path d="M8 12h8"/></svg><i class="pw-rip"></i></div><b>Ward reports by QR</b><small>Scan, fault note and photo</small></div><div class="pw-step" style="--c:#F43F5E;--c2:#FB7185"><div class="pw-ico"><svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg><i class="pw-rip"></i></div><b>Engineer alerted</b><small>Escalated by criticality</small></div><div class="pw-step" style="--c:#6366F1;--c2:#818CF8"><div class="pw-ico"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.4 2.4-2.6-.6-.6-2.6z"/></svg><i class="pw-rip"></i></div><b>Repair in progress</b><small>Spares issued, downtime timed</small></div><div class="pw-step" style="--c:#059669;--c2:#2DD4BF"><div class="pw-ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg><i class="pw-rip"></i></div><b>Reporter confirms</b><small>Sign-off closes the ticket</small></div></div>
+      <div class="pg"><i id="pgb"></i></div>
+      <div class="fl5" id="fl5"></div>
+    </div>
+  </section>
+
+  <!-- Compliance Section -->
+  <section id="compliance" class="alt">
+    <div class="w">
+      <div class="hd rv">
+        <h2>The record is a by-product of daily work, not a panic before audit</h2>
+        <p>Evidence exists because the work went through the system. A comprehensive audit dossier is a 1-click query, not a two-week administrative project.</p>
+      </div>
+      <div class="pw pw-comp rv"><div class="pw-card" style="--c:#2563EB;--c2:#38BDF8"><span class="pw-sh"></span><div class="pw-ring"><svg viewBox="0 0 64 64"><circle class="bg" cx="32" cy="32" r="27" fill="none" stroke-width="5"/><circle class="fg" cx="32" cy="32" r="27" fill="none" stroke-width="5" stroke-linecap="round" transform="rotate(-90 32 32)"/><g transform="translate(20,20)" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></g></svg><span class="pw-tick"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></div><div class="pw-txt"><b>NABH</b><small>Hospital accreditation</small><div class="pw-st"><span class="a">Collecting evidence</span><span class="b">Audit-ready</span></div></div><span class="pw-link"><i></i></span></div><div class="pw-card" style="--c:#6366F1;--c2:#A78BFA"><span class="pw-sh"></span><div class="pw-ring"><svg viewBox="0 0 64 64"><circle class="bg" cx="32" cy="32" r="27" fill="none" stroke-width="5"/><circle class="fg" cx="32" cy="32" r="27" fill="none" stroke-width="5" stroke-linecap="round" transform="rotate(-90 32 32)"/><g transform="translate(20,20)" fill="none" stroke="#6366F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></g></svg><span class="pw-tick"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></div><div class="pw-txt"><b>JCI</b><small>International standard</small><div class="pw-st"><span class="a">Collecting evidence</span><span class="b">Audit-ready</span></div></div><span class="pw-link"><i></i></span></div><div class="pw-card" style="--c:#059669;--c2:#2DD4BF"><span class="pw-sh"></span><div class="pw-ring"><svg viewBox="0 0 64 64"><circle class="bg" cx="32" cy="32" r="27" fill="none" stroke-width="5"/><circle class="fg" cx="32" cy="32" r="27" fill="none" stroke-width="5" stroke-linecap="round" transform="rotate(-90 32 32)"/><g transform="translate(20,20)" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></g></svg><span class="pw-tick"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></div><div class="pw-txt"><b>AERB</b><small>Radiation safety</small><div class="pw-st"><span class="a">Collecting evidence</span><span class="b">Audit-ready</span></div></div></div><div class="pw-pill">Every record behind all three, ready in one click</div></div>
+      <div class="au">
+        <div class="ac rv" id="a1">
+          <h3>Today: the week before the NABH audit</h3>
+          <ol>
+            <li><b>Day 1</b>Collect logbooks: spreadsheets, notebooks, and WhatsApp chats.</li>
+            <li><b>Day 2</b>Reconcile asset lists that disagree on 40 items across floors.</li>
+            <li><b>Day 3</b>Hunt for calibration certificates in email threads and binder folders.</li>
+            <li><b>Day 4</b>Write up incidents from memory. Downtime duration is guessed.</li>
+            <li><b>Day 5</b>Scramble to format everything into the external assessor’s template.</li>
+          </ol>
+          <p class="res">A document describing last year, hastily assembled this week.</p>
+        </div>
+        <div class="ac me rv" id="a2">
+          <h3>With AssetIQ: the same week</h3>
+          <ol>
+            <li><b>Any day</b>Open Reports. Choose the facility, wing, and date range.</li>
+            <li><b>Minute 2</b>Equipment binder, calibration certificates, incident log with measured downtime, PM compliance and AERB licence status.</li>
+            <li><b>Minute 5</b>Export clean records that engineers and ward teams worked in all year.</li>
+            <li><b>Later</b>The assessor asks a follow-up. Scan any asset QR tag; history is live.</li>
+          </ol>
+          <p class="res">A living record of the year, available on any day of it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Compare Section -->
+  <section id="compare">
+    <div class="w">
+      <div class="hd rv">
+        <h2>How AssetIQ compares against the alternatives</h2>
+        <p>Of 24 capabilities compared, AssetIQ has 23 fully available. The other two solutions we compared have 11 and 12. Here is how it stands against general maintenance software and spreadsheets.</p>
+      </div>
+      <div class="tw rv">
+        <table>
+          <thead>
+            <tr>
+              <th>Capability</th>
+              <th class="me">AssetIQ</th>
+              <th>Generic CMMS</th>
+              <th>Spreadsheets</th>
+            </tr>
+          </thead>
+          <tbody id="tb"></tbody>
+        </table>
+      </div>
+      <p class="note">Comparison categories benchmark typical off-the-shelf maintenance software. Individual bespoke setups may vary.</p>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ESTIMATOR SECTION (#estimate)
+       Strict layout hierarchy:
+       - Full Top Header (Yellow Region): title + description spanning across top
+       - Main Grid Below Header:
+         - Left Column (Green Region): 2x2 Metric Cards
+         - Right Column (Red Region): 5 Interactive Sliders
+       - Fits in a single slide fold (min-height: 100vh)
+       ========================================================================== -->
+  <section id="estimate" class="alt">
+    <div class="w">
+      
+      <!-- Full Top Section (Yellow Region) -->
+      <div class="est-top-header rv">
+        <h2>A high-level estimate for your estate</h2>
+        <p>
+          Move the sliders to match your hospital. Nothing is stored. These are estimates for orientation, not a guarantee of outcome: the value comes from seeing these numbers every month and acting on them.
+        </p>
+      </div>
+
+      <!-- Balanced 2-Column Section Below (Green & Red Regions) -->
+      <div class="est-main-grid rv">
+        
+        <!-- Left Column: 2x2 Outcome Cards (Green Region) -->
+        <div class="est-cards-grid">
+          <div class="est-card featured" id="c1">
+            <div>
+              <small>Capital on the floor</small>
+              <b class="card-value" id="o1">₹42.0 Cr</b>
+            </div>
+            <p>The register puts a value on it, by department and criticality.</p>
+          </div>
+
+          <div class="est-card" id="c2">
+            <div>
+              <small>Downtime cost at current rate</small>
+              <b class="card-value" id="o2">₹9.6 L</b>
+            </div>
+            <p>Hours out of service on revenue equipment, priced at your rate.</p>
+          </div>
+
+          <div class="est-card" id="c3">
+            <div>
+              <small>Maintenance on time target</small>
+              <b class="card-value" id="o3">94%</b>
+            </div>
+            <p>Estates that schedule from the register typically run above 90%.</p>
+          </div>
+
+          <div class="est-card" id="c4">
+            <div>
+              <small>Protected assets</small>
+              <b class="card-value" id="o4">1,200 units</b>
+            </div>
+            <p>Every asset with its coverage, so a repair under warranty or contract is never paid twice.</p>
+          </div>
+        </div>
+
+        <!-- Right Column: 5 Sliders Container (Red Region) -->
+        <div class="est-sliders-box">
+          
+          <div class="slider-group" id="sg1">
+            <label for="e1">
+              <span>Assets in the register</span>
+              <span class="badge" id="l1">1,200</span>
+            </label>
+            <div class="slider-track-wrap">
+              <span class="slider-bubble" id="b-e1">1,200</span>
+              <input type="range" class="custom-range" id="e1" min="100" max="4000" step="50" value="1200">
+            </div>
+          </div>
+
+          <div class="slider-group" id="sg2">
+            <label for="e2">
+              <span>Average purchase value per asset</span>
+              <span class="badge" id="l2">₹3.5 L</span>
+            </label>
+            <div class="slider-track-wrap">
+              <span class="slider-bubble" id="b-e2">₹3.5 L</span>
+              <input type="range" class="custom-range" id="e2" min="50000" max="2000000" step="50000" value="350000">
+            </div>
+          </div>
+
+          <div class="slider-group" id="sg3">
+            <label for="e3">
+              <span>Preventive maintenance done on time today</span>
+              <span class="badge" id="l3">60%</span>
+            </label>
+            <div class="slider-track-wrap">
+              <span class="slider-bubble" id="b-e3">60%</span>
+              <input type="range" class="custom-range" id="e3" min="10" max="100" step="5" value="60">
+            </div>
+          </div>
+
+          <div class="slider-group" id="sg4">
+            <label for="e4">
+              <span>Downtime on revenue equipment per month</span>
+              <span class="badge" id="l4">40 hrs</span>
+            </label>
+            <div class="slider-track-wrap">
+              <span class="slider-bubble" id="b-e4">40 hrs</span>
+              <input type="range" class="custom-range" id="e4" min="0" max="300" step="5" value="40">
+            </div>
+          </div>
+
+          <div class="slider-group" id="sg5">
+            <label for="e5">
+              <span>Revenue per hour on that equipment</span>
+              <span class="badge" id="l5">₹24,000</span>
+            </label>
+            <div class="slider-track-wrap">
+              <span class="slider-bubble" id="b-e5">₹24,000</span>
+              <input type="range" class="custom-range" id="e5" min="5000" max="100000" step="1000" value="24000">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 30-Day Trial Roadmap Section -->
+  <section id="trial">
+    <div class="w">
+      <div class="hd rv">
+        <h2>Run a 30-day trial on your own equipment</h2>
+        <p>The trial runs alongside your current system: spreadsheets, a general CMMS, or any other tool you use today. Your current system keeps running during the trial.</p>
+      </div>
+      <div class="bar2" id="b2"><i></i></div>
+      <div class="tl rv">
+        <div>
+          <small>Days 1–5</small>
+          <h3>Inventory & QR Tagging</h3>
+          <p>Import your spreadsheet in bulk, or our team tags the devices on site with you.</p>
+        </div>
+        <div>
+          <small>Days 6–7</small>
+          <h3>Staff Walkthrough</h3>
+          <p>We train engineers, ward staff, department heads and administrators on the parts they use.</p>
+        </div>
+        <div>
+          <small>Days 8–29</small>
+          <h3>Run Daily Operations</h3>
+          <p>You log PM, calibration and breakdowns as they happen, with on-site support.</p>
+        </div>
+        <div>
+          <small>Day 30</small>
+          <h3>Audit Report & Review</h3>
+          <p>Compare the audit report with your current system's output and decide.</p>
+        </div>
+      </div>
+      <p class="note rv" style="text-align:center;margin-top:26px;font-weight:600;color:var(--ink)">Simple asset-based pricing · Unlimited users · Lower price on multi-year contracts · DPDP Act ready · Remote and on-site support · No servers to install</p>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="alt">
+    <div class="w fq">
+      <div class="hd rv">
+        <h2>What hospital directors ask during evaluation</h2>
+      </div>
+      <div id="fq" class="rv"></div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact">
+    <div class="w ct">
+      <div class="rv">
+        <h2>Leave your details. We will set up your trial.</h2>
+        <p style="color:var(--mute);margin-top:14px;line-height:1.6">
+          We arrange a 30-minute walkthrough using your equipment list, your maintenance cycles and your questions, then set up your trial on a sample of your devices. Send the list ahead if you can.
+        </p>
+        <p style="margin-top:22px;font-weight:700;font-size:1.05rem;color:#0F172A">
+          Direct Line: +91 95136 11667<br>
+          <span style="font-weight:500;color:var(--mute)">sales@onecliq.ai · getassetiq.ai</span>
+        </p>
+      </div>
+      <div class="rv">
+        <form id="fm">
+          <input class="f" name="org" required placeholder="Hospital or organisation name" aria-label="Hospital name">
+          <input name="city" placeholder="City" aria-label="City">
+          <input name="scale" placeholder="Beds or approximate assets" aria-label="Beds or assets">
+          <input name="name" required placeholder="Your full name" aria-label="Your full name">
+          <input name="role" placeholder="Role (e.g. Biomed Head, MS, COO)" aria-label="Your role">
+          <input name="phone" required type="tel" placeholder="Mobile number" aria-label="Mobile number">
+          <input name="email" type="email" placeholder="Email address" aria-label="Email address">
+          <textarea class="f" name="notes" rows="3" placeholder="Tell us about your current asset tracking setup (optional)" aria-label="Additional notes"></textarea>
+          <button type="submit" class="btn btn-hero-primary f" style="border-radius:12px;padding:15px">Schedule 30-Minute Walkthrough</button>
+          <p class="f note" style="margin:0;text-align:center">We respect clinical confidentiality. NDA signed on request.</p>
+        </form>
+        <div class="ok" id="ok" hidden>
+          <h3>Request Received.</h3>
+          <p style="color:var(--mute);margin-top:8px">Our biomedical systems specialist will call you shortly to schedule your demo. If you have an asset sheet to test, reply to our confirmation mail.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Video Demo Modal -->
+<div class="modal-overlay" id="videoModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-card">
+    <div class="modal-head">
+      <h3 id="modalTitle">AssetIQ 60-Second Overview</h3>
+      <button class="modal-close" id="btnCloseModal" aria-label="Close modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-placeholder">
+        <div class="play-icon" style="width:58px;height:58px;margin-bottom:16px;background:var(--hero-btn-g)">
+          <svg style="width:24px;height:24px;margin-left:3px" viewBox="0 0 24 24"><polygon points="6,4 20,12 6,20"></polygon></svg>
+        </div>
+        <h4 style="font-size:1.35rem;font-weight:700;margin-bottom:6px">Watch AssetIQ in Real Action</h4>
+        <p style="color:#94A3B8;max-width:440px;font-size:0.92rem;line-height:1.5">
+          See how staff report a fault by QR scan, how engineers work offline, and how NABH and JCI audit reports export in one click.
+        </p>
+        <a href="#contact" class="btn btn-hero-primary" style="margin-top:20px;padding:10px 24px" onclick="closeModal()">
+          Book Live 1-on-1 Demo
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="w">
+    <div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+        <svg style="width:28px;height:28px;flex-shrink:0" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 14V8C4 5.79086 5.79086 4 8 4H14" stroke="#080D1A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M30 4H36C38.2091 4 40 5.79086 40 8V14" stroke="#080D1A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M40 30V36C40 38.2091 38.2091 40 36 40H30" stroke="#080D1A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M14 40H8C5.79086 40 4 38.2091 4 36V30" stroke="#080D1A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="22" cy="22" r="11.5" fill="#00D2B8"/>
+          <path d="M14.5 22.2H17.2L19.2 17.5L22 26.5L24.8 19.5L26.5 22.2H29.5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span style="font-size:1.15rem;font-weight:800;color:#080D1A">Asset<span style="color:#00A3FF">IQ</span></span>
+        <span style="color:#94A3B8;font-size:0.85rem">by OneCliq</span>
+      </div>
+      Know where it is. Service it on time.<br>
+      getassetiq.ai · sales@onecliq.ai
+    </div>
+    <div>
+      Cloud hosting, data stored in India · Encrypted, VAPT-tested<br>
+      Unlimited users · Onboarding and training included
+    </div>
+    <div class="c">
+      © 2026 AssetIQ (Onecliq Technologies Private Limited). All rights reserved. NABH and JCI ready.
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp Button -->
+<a class="wa" href="https://wa.me/918867940555" target="_blank" rel="noopener" aria-label="Chat with AssetIQ on WhatsApp"><svg viewBox="0 0 24 24" width="30" height="30" fill="#fff" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+
+<script src="js/main.js"></script>
+
+<script src="js/effects.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="js/hero-rig.js"></script>
+
+<script src="js/hero-react.js"></script>
+</body>
+</html>
