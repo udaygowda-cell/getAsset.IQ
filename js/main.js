@@ -217,8 +217,27 @@ const io = new IntersectionObserver(es => es.forEach(e => {
     e.target.classList.add('in');
     io.unobserve(e.target);
   }
-}), { threshold: 0.15 });
+}), { threshold: 0, rootMargin: '0px 0px 18% 0px' });
 $$('.rv, .bar2, tr.row').forEach(e => io.observe(e));
+/* Safety net: anything on screen, just below it, or already scrolled past is shown, so a fast
+   scroll or a menu jump never leaves a blank gap on phones. */
+(function () {
+  let t = false;
+  function pass() {
+    t = false;
+    const lim = innerHeight * 1.15;
+    $$('.rv:not(.in), .bar2:not(.in), tr.row:not(.in)').forEach(e => {
+      if (e.getBoundingClientRect().top < lim) { e.classList.add('in'); io.unobserve(e); }
+    });
+    $$('.fx-pre').forEach(e => {
+      if (e.getBoundingClientRect().top < lim) { e.classList.remove('fx-pre'); e.classList.add('fx-seen'); }
+    });
+  }
+  const sched = () => { if (!t) { t = true; requestAnimationFrame(pass); } };
+  addEventListener('scroll', sched, { passive: true });
+  addEventListener('resize', sched); addEventListener('hashchange', sched); addEventListener('load', sched);
+  setTimeout(pass, 400);
+})();
 
 const io2 = new IntersectionObserver(es => es.forEach(e => {
   if (e.isIntersecting) {
