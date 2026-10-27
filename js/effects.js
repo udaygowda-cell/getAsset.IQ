@@ -1,3 +1,9 @@
+/* Phone crop for the hero scene: show the doctor and monitor larger instead of the whole room */
+window.hsFit = function () {
+  var s = document.querySelector('.hs-svg'); if (!s) return;
+  s.setAttribute('viewBox', matchMedia('(max-width: 760px)').matches ? '225 30 470 290' : '0 0 900 340');
+};
+window.hsFit(); matchMedia('(max-width: 760px)').addEventListener('change', window.hsFit);
 /* ==========================================================================
    ANIMATION & EFFECTS LAYER (additive only - existing scripts untouched)
    ========================================================================== */

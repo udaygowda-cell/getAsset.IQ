@@ -30,6 +30,7 @@
   var Scene = React.memo(function Scene() {
     var ref = React.useRef(null);
     React.useLayoutEffect(function () {
+      if (window.hsFit) window.hsFit();
       var stop = window.hsInitRig && window.hsInitRig(ref.current);
       return function () { if (stop) stop(); };
     }, []);

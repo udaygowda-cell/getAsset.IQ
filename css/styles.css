@@ -1346,3 +1346,38 @@ footer::before { content: ""; position: absolute; top: -1px; left: 0; width: 100
   .hd { margin-bottom: 28px; }
   .rv { transform: translateY(12px); transition-duration: .45s; }
 }
+
+/* ==========================================================================
+   MOBILE FIT (phones, <= 760px): everything sized to the screen, no cut-off content
+   ========================================================================== */
+@media (max-width: 760px) {
+  .w { padding-left: 18px; padding-right: 18px; }
+  .nav { height: 64px; gap: 10px; }
+  header .btn.pri { padding: 10px 14px; font-size: .8rem; white-space: nowrap; flex: none; }
+  /* hero scene: cropped to the doctor + monitor, notifications as a tidy row underneath */
+  .hs-stage { aspect-ratio: auto; height: auto; overflow: visible; margin-top: 28px; }
+  .hs-inner { position: relative; inset: auto; left: auto; width: 100%; transform: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+  .hs-inner > div[style] { display: block !important; width: 100%; }
+  .hs-svg { width: 100%; height: auto; overflow: hidden; border-radius: 22px; border: 1px solid var(--line); }
+  .hs-chip, .hs-a, .hs-b, .hs-c, .hs-v { position: static; left: auto; top: auto; display: flex; padding: 7px 12px 7px 8px; }
+  .hs-chip small { display: none; }
+  .hs-chip b { font-size: .74rem; }
+  /* small illustrated strips: readable labels */
+  .hs-strip text { font-size: 19px; }
+  /* comparison table fits the screen instead of scrolling sideways */
+  table { min-width: 0; table-layout: fixed; font-size: .62rem; }
+  th, td { padding: 10px 3px 10px 5px; overflow-wrap: break-word; hyphens: auto; letter-spacing: -.01em; }
+  thead th { font-size: .46rem; letter-spacing: 0; }
+  th:nth-child(1), td:nth-child(1) { width: 28%; }
+  th:nth-child(2), td:nth-child(2) { width: 25%; }
+  th:nth-child(3), td:nth-child(3), th:nth-child(4), td:nth-child(4) { width: 23.5%; }
+  /* estimator */
+  .slider-group label { flex-wrap: wrap; gap: 4px 8px; }
+  .slider-group label .badge { white-space: nowrap; }
+  /* forms: 16px stops phones zooming in on tap */
+  input, select, textarea { font-size: 16px; }
+}
+@media (max-width: 380px) {
+  h1 { font-size: 2rem; }
+  .brand-sub { display: none; }
+}
